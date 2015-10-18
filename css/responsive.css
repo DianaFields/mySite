@@ -1,0 +1,44 @@
+
+	nav{
+		height: 200px;
+	}
+	article figure{
+		margin: inherit;
+	}
+	h1{
+		font-size: 4em !important;
+	}
+	.main{
+		width: 320px;
+	}
+	.intro{
+		width: 90%;
+		padding-top: 9%;
+	}
+	.labels{
+		display: none;
+	}
+	#logo{
+		width: 70%;
+		height: 150px;
+		display: block;
+		background-size: contain;
+		background-position: center;
+		margin: 5% auto;
+	}
+	.logo{
+		width: 80%;
+		height: auto;
+	}
+	.logo-1, .logo-2, .logo-3, .logo-5, .logo-6{
+		background-size: 85%;
+	}
+	.logo-4{
+		background-size: 55%;
+	}
+	.line{
+		background-size: cover;
+		height: 4px;
+	}
+
+

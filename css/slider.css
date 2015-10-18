@@ -1,0 +1,133 @@
+/* Basic jQuery Slider essential styles */
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+
+/*slider demo*/
+/* Demo CSS - You do not need this css in your own slider */
+
+body{
+	font-family: "Open Sans", helvetica, arial;
+	width: 100%;
+}
+
+pre{
+	font-family: "Source Code Pro", monospace;
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 20px;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	background-color: whiteSmoke;
+	border: 1px solid #CCC;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+h2{
+	font-size: 48px;
+}
+
+pre + h2{
+	margin-top: 80px;
+}
+
+.container{
+	margin: 0 auto;
+	text-align: center;
+	width:800px;
+	height: 600px;
+	padding-top: 8%;
+
+}
+#container{
+	height: 400px;
+	width:600px;
+	margin:0 auto;
+	width: 800px;
+	height: 600px;
+}
+#banner-fade{
+
+	width: 800px!important; height: 600px!important;
+}
+.bjqs{
+
+	width: 800px!important; height: 600px!important;
+}
+
+#banner-fade,
+#banner-slide{
+	margin-bottom: 60px;
+}
+
+ul.bjqs-controls.v-centered li a:first-child{
+	display:block;
+	padding:10px;
+	background:#f44f7e;
+	color:white;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+	background:#000;
+	color:#fff;
+}
+
+ol.bjqs-markers li a{
+	display: none;
+	padding:5px 10px;
+	background:#000;
+	color:#fff;
+	margin:5px;
+	text-decoration: none;
+	border-radius: 25px;
+
+	
+}
+
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{
+	background: #f44f7e;
+}
+
+p.bjqs-caption{
+	background: rgba(255,255,255,0.5);
+}
+@media screen and (max-width: 320px){
+	#banner-fade{
+		width: 100%!important;
+		height: 250px!important;
+	}
+	ul.bjqs{
+		width: 100%!important;
+	}
+	ul.bjqs img{
+		width: 100%!important;
+		text-align: center;
+	}
+	.bjqs-slide{
+		width: 100%!important;
+	}
+	.container{
+		width: 100%!important;
+	}
+	.container h1{
+		margin-top: 110px!important;
+	}
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/slider.css">
+		<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+		<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="../js/bjqs-1.3.js"></script>
+	</head>
+	<body>
+		<nav>
+				<div class="header">
+					<div id="logo">
+						<a href="../index.html"><img src="../images/logo.png"></a>
+					</div>
+						<div class="mmenu" id="show-drop">
+							<div id="cbp-hrmenu" class="cbp-hrmenu"> 
+								<ul class="labels inter labDrop">
+									<li onclick="javascript:dropDown();">
+									<div href=""><img src="../images/drop.png"></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+		</nav>
+		<div id="menu" class="about-close">
+			<!-- <div class="kill_me" onclick="javascript:closeBio();"></div> -->
+			<div class="menuClose">
+				<section>
+					<ul >
+						<li><a href="../web/index.html">Web Design</a></li>
+						<li><a href="../identity/index.html">Identity</a></li>
+						<li><a href="../branding/index.html">Branding</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>	
+		<div class="container">
+		<h1><span class="pinky">W</span>eb Design</h1>
+			<div id="banner-fade">
+				<ul class="bjqs">
+					<li><img src="../images/web.gif"></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+	$('#banner-fade').bjqs({
+		
+		// 'responsive' : true
+	});
+});
+			function dropDown(){
+			$( "#menu" ).addClass( "about-me");
+			$( ".menuClose" ).addClass( "menuShow");
+			$( ".kill_me" ).addClass( "kill_ok");
+		}
+
+	</script>
+
+		<script type="text/javascript" src="../js/lib.js"></script>
+</html>
