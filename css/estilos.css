@@ -215,13 +215,12 @@ article{
 .logo-cont{
   z-index: 9999;
   width: 70%;
-  height: 100%;
   font-size: 17px;
   line-height: 1.4;
   color: #2e3192;
   background: transparent;
   opacity: 0;
-  margin:11em auto;
+  margin:45% 0 0 0;
   cursor: default;
   pointer-events: none;
   font-family: my-Fontsem;
