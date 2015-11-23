@@ -453,17 +453,7 @@ footer{
 	margin-top: 20%;
 	font-size: 14px;
 }
-.hojaContact span{
-	border-bottom:  1px solid gray;
-	vertical-align: middle;
-}
-.hojaContact input{
-	color: white;
-	background:none;
-	width: 80%;
-	border: none;
 
-}
 .hojaContact textarea{
 	color: white;
 	background:none;
@@ -513,8 +503,13 @@ footer{
 	margin: 0 auto;
 	text-align: center;
 }
+.contact-me input{
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+}
 .txt-me{
-	width: 25%;
+	width: 40%;
 	text-align: center;
 	display: inline-block;
 	margin:0 auto;
@@ -536,24 +531,21 @@ footer{
 }
 .txt-me::before{
 	width: 100%;
-	content: 'Â¡EscrÃ­beme!';
+	content: '¡Escríbeme!';
 	font-family: my-Fontsem;
 	font-size: 22px;
 	color: #f44f7e;
 	padding-bottom: 2%;
-	margin-bottom: 20px;
 	display: block;
 	border-bottom: 1px dotted white;
 }
 .enter-info{
-	background: rgba(255,255,255,0.8);
+	background: none;
 	width: 100%;
-	height: 50px;
 	vertical-align: middle;
 	border: 0;
 	border-bottom: 2px solid #f44f7e;
 }
-
 .mask{
 	background: url(../images/mask.png)no-repeat;
 	background-position: left;
@@ -676,6 +668,8 @@ h3{
 	color: black;
 	font-size: 14px;
 	line-height: 40px;
+	text-align: center;
+	margin: 0 auto;
 
 }
 .btn-send{
@@ -683,13 +677,14 @@ h3{
 	background-repeat: no-repeat;
 	background-color: #cccccc;
 	background-size: 70%;
-	width: 120px;
+	width: 30%!important;
 	height: 40px;
 	border-radius: 4px;
 	margin: 5% auto;
 	background-position: left;
 	cursor: pointer;
 	text-align: center;
+	padding: 0!important;
 }
 /*.cbp-hropen .cbp-hrsub {
 	height: 320px;
@@ -727,6 +722,30 @@ h3{
 .minHi{
 	font-size: 15px;
 	color: #f44f7e;
+}
+.container{
+	width: 65%;
+	padding-top: 10%;
+	margin: 0 auto;
+	text-align: center;
+}
+.container section{
+	background: #d1d1d1;
+	width: 100%;
+	padding: 0;
+}
+.container section ul{
+	padding: 0;
+	margin: 0 auto;
+}
+.container section ul li{
+	display: inline-block;
+	width:85%;
+	padding: 2% 0 15% 0;
+
+}
+.container section img{
+	width: 90%;
 }
 @media screen and (max-width: 1024px){
 	nav{
@@ -819,14 +838,14 @@ h3{
 		width: 85%;
 	}
 	.logoo{
-		height: 580px!important;
+		height: 620px!important;
 	}
 	.logo{
 		width: 85%;
 		height: 200px;
 	}
 	.logo-1, .logo-2 {
-		background-size: 45%;
+		background-size: 55%;
 		height: 250px;
 	}
 	.logo-5, .logo-6{
@@ -897,10 +916,10 @@ h3{
 	}
 	.txt-mobile{
 		display: block;
-		font-size: 11px;
+		font-size: 14px;
 		font-family: my-Fontsem;
 		padding: 0;
-		margin:-30px 0 0 0;
+		margin:-50px 0 0 0;
 		width: 100%;
 		display: block;
 		color: gray;
@@ -909,7 +928,6 @@ h3{
 	.inter div{
 		text-align: center;
 		vertical-align: middle;
-		padding-top: 16px;
 	}
 	.menuClose{
 		width: 220px;
@@ -946,7 +964,7 @@ h3{
 	}
 	.main{
 		width: 100%;
-		height: auto;
+		height: 100%;
 	}
 	.intro{
 		width: 100%;
@@ -1036,7 +1054,9 @@ h3{
 	}
 	.item{
 		width: 100%;
-		height: 250px;	}
+		height: 250px;	
+		bottom: 0;
+	}
 	.web-eg, .corp-cc, .iden-pet{
 		height: 180px;
 		background-size: cover;
@@ -1087,7 +1107,7 @@ h3{
 		color: gray;
 	}
 footer{
-		margin-top: 50%;
+		margin-top: 25%;
 	}
 	.contactTemp{
 		width: 100%;
@@ -1110,6 +1130,24 @@ footer{
 	}
 	.page{
 	height: 200px;
+}
+.container{
+	width: 100%;
+	padding-top: 35%;
+	margin: 0 auto;
+	text-align: center;
+}
+.container section{
+	background: #d1d1d1;
+	width: 100%;
+	padding: 0;
+}
+.container section ul li{
+	width: 95%;
+}
+.container section img{
+	width: 100%;
+	padding: 2% 0 2% 0;
 }
 }
 
