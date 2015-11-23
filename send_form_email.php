@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 <?php
- 
 if(isset($_POST['email'])) {
  
      
@@ -9,7 +7,7 @@ if(isset($_POST['email'])) {
  
     $email_to = "di.disegno@gmail.com";
  
-    $email_subject = "Your email subject line";
+    $email_subject = "Contacto Diana Fields";
  
      
  
@@ -19,7 +17,7 @@ if(isset($_POST['email'])) {
  
         // your error code can go here
  
-        echo "Algo va mal, por favor inténtalo nuevamente! ";
+        echo "Algo va mal, por favor inténtalo nuevamente.";
  
         echo "";
  
@@ -35,14 +33,10 @@ if(isset($_POST['email'])) {
  
     // validation expected data exists
  
-    if(!isset($_POST['name']) ||
+    if(!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['comments']))
  
-        !isset($_POST['email']) ||
- 
-        !isset($_POST['comment']) ||
-
- 
-        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+        
+      died('We are sorry, but there appears to be a problem with the form you submitted.');       
  
     }
  
@@ -50,9 +44,9 @@ if(isset($_POST['email'])) {
  
     $first_name = $_POST['name']; // required
  
-    $last_name = $_POST['email']; // required
+    $email = $_POST['email']; // required
  
-    $email_from = $_POST['comment']; // required
+    $comments = $_POST['comments']; // required
  
  
      
@@ -61,7 +55,7 @@ if(isset($_POST['email'])) {
  
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
-  if(!preg_match($email_exp,$email_from)) {
+  if(!preg_match($email_exp,$email)) {
  
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
  
@@ -75,7 +69,7 @@ if(isset($_POST['email'])) {
  
   }
  
-  if(!preg_match($string_exp,$last_name)) {
+  if(!preg_match($string_exp,$comments)) {
  
     $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
  
@@ -93,7 +87,7 @@ if(isset($_POST['email'])) {
  
   }
  
-    $email_message = "Form details below.\n\n";
+    $email_message = "Diana somebody has seen your work!.\n\n";
  
      
  
@@ -107,11 +101,11 @@ if(isset($_POST['email'])) {
  
      
  
-    $email_message .= "First Name: ".clean_string($name)."\n";
+    $email_message .= "Name: ".clean_string($first_name)."\n";
  
-    $email_message .= "Last Name: ".clean_string($email)."\n";
+    $email_message .= "E-mail: ".clean_string($email)."\n";
  
-    $email_message .= "Email: ".clean_string($comment)."\n";
+    $email_message .= "Comments: ".clean_string($comments)."\n";
  
      
  
@@ -133,49 +127,40 @@ $headers = 'From: '.$email_from."\r\n".
  
 <!-- include your own success html here -->
  
- 
- 
-Thank you for contacting us. We will be in touch with you very soon.
- 
- 
- 
-<?php
- 
+ <html>
+ <head>
+  <style type="text/css">
+ @font-face{
+  font-family: my-Fontsem;
+  src:url(fonts/TheSans-4-SemiLight.otf);
 }
-
-=======
-<?php 
-$action=$_REQUEST['action']; 
-if ($action=="")    /* display the contact form */ 
-    { 
-    ?> 
-    <form  action="" method="POST" enctype="multipart/form-data"> 
-    <input type="hidden" name="action" value="submit"> 
-    Your name:<br> 
-    <input name="name" type="text" value="" size="30"/><br> 
-    Your email:<br> 
-    <input name="email" type="text" value="" size="30"/><br> 
-    Your message:<br> 
-    <textarea name="message" rows="7" cols="30"></textarea><br> 
-    <input type="submit" value="Send email"/> 
-    </form> 
-    <?php 
-    }  
-else                /* send the submitted data */ 
-    { 
-    $name=$_REQUEST['name']; 
-    $email=$_REQUEST['email']; 
-    $message=$_REQUEST['message']; 
-    if (($name=="")||($email=="")||($message=="")) 
-        { 
-        echo "All fields are required, please fill <a href=\"\">the form</a> again."; 
-        } 
-    else{         
-        $from="From: $name<$email>\r\nReturn-path: $email"; 
-        $subject="Message sent using your contact form"; 
-        mail("di.disegno@gmail.com", $subject, $message, $from); 
-        echo "Email sent!"; 
-        } 
-    }   
->>>>>>> origin/master
-?>
+  body{
+    font-family: my-Fontsem;
+    width: 100%;
+    margin:0 auto;
+    color:#f44f7e;
+  }
+  section{
+    width: 30%;
+    text-align: center;
+    margin: 4% auto;
+  }
+    .imgThanks img{
+      text-align: center;
+      margin: 0 auto;
+    }
+  </style>
+ </head>
+ <body>
+  <section>
+    <h3>Thank you for sending your comments, I will contact you as soon as possible.</h3>
+      <div class="imgThanks">
+        <img src="../images/carel-0.jpg">Thank you for contacting us. We will be in touch with you very soon.
+     </div>
+   <a href="index.html">Regresar</a>
+ </section>
+ </body>
+ </html>
+ 
+ 
+ 
