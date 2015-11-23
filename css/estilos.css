@@ -728,30 +728,6 @@ h3{
 	font-size: 15px;
 	color: #f44f7e;
 }
-.container{
-	width: 65%;
-	padding-top: 10%;
-	margin: 0 auto;
-	text-align: center;
-}
-.container section{
-	background: #d1d1d1;
-	width: 100%;
-	padding: 0;
-}
-.container section ul{
-	padding: 0;
-	margin: 0 auto;
-}
-.container section ul li{
-	display: inline-block;
-	width:85%;
-	padding: 2% 0 15% 0;
-
-}
-.container section img{
-	width: 90%;
-}
 @media screen and (max-width: 1024px){
 	nav{
 		height: 70px;
@@ -843,14 +819,14 @@ h3{
 		width: 85%;
 	}
 	.logoo{
-		height: 620px!important;
+		height: 580px!important;
 	}
 	.logo{
 		width: 85%;
 		height: 200px;
 	}
 	.logo-1, .logo-2 {
-		background-size: 55%;
+		background-size: 45%;
 		height: 250px;
 	}
 	.logo-5, .logo-6{
@@ -921,10 +897,10 @@ h3{
 	}
 	.txt-mobile{
 		display: block;
-		font-size: 14px;
+		font-size: 11px;
 		font-family: my-Fontsem;
 		padding: 0;
-		margin:-50px 0 0 0;
+		margin:-30px 0 0 0;
 		width: 100%;
 		display: block;
 		color: gray;
@@ -933,6 +909,7 @@ h3{
 	.inter div{
 		text-align: center;
 		vertical-align: middle;
+		padding-top: 16px;
 	}
 	.menuClose{
 		width: 220px;
@@ -969,7 +946,7 @@ h3{
 	}
 	.main{
 		width: 100%;
-		height: 100%;
+		height: auto;
 	}
 	.intro{
 		width: 100%;
@@ -1059,9 +1036,7 @@ h3{
 	}
 	.item{
 		width: 100%;
-		height: 250px;	
-		bottom: 0;
-	}
+		height: 250px;	}
 	.web-eg, .corp-cc, .iden-pet{
 		height: 180px;
 		background-size: cover;
@@ -1112,7 +1087,7 @@ h3{
 		color: gray;
 	}
 footer{
-		margin-top: 25%;
+		margin-top: 50%;
 	}
 	.contactTemp{
 		width: 100%;
@@ -1135,24 +1110,6 @@ footer{
 	}
 	.page{
 	height: 200px;
-}
-.container{
-	width: 100%;
-	padding-top: 35%;
-	margin: 0 auto;
-	text-align: center;
-}
-.container section{
-	background: #d1d1d1;
-	width: 100%;
-	padding: 0;
-}
-.container section ul li{
-	width: 95%;
-}
-.container section img{
-	width: 100%;
-	padding: 2% 0 2% 0;
 }
 }
 
