@@ -87,7 +87,7 @@ if(isset($_POST['email'])) {
  
   }
  
-    $email_message = "Diana somebody has seen your work!.\n\n";
+    $email_message = "Diana somebody saw your work!\n\n";
  
      
  
@@ -129,6 +129,7 @@ $headers = 'From: '.$email_from."\r\n".
  
  <html>
  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style type="text/css">
  @font-face{
   font-family: my-Fontsem;
@@ -139,15 +140,28 @@ $headers = 'From: '.$email_from."\r\n".
     width: 100%;
     margin:0 auto;
     color:#f44f7e;
+    text-align: center;
   }
   section{
-    width: 30%;
+    width: 90%;
     text-align: center;
     margin: 4% auto;
+  }
+  h3{
+    font-size: 18px;
+    
   }
     .imgThanks img{
       text-align: center;
       margin: 0 auto;
+    }
+    button{
+      width: 90%;
+      height: 50px;
+      background: black;
+      font-size: 17px;
+      color: white;
+      border-radius: 4px;
     }
   </style>
  </head>
@@ -155,9 +169,10 @@ $headers = 'From: '.$email_from."\r\n".
   <section>
     <h3>Thank you for sending your comments, I will contact you as soon as possible.</h3>
       <div class="imgThanks">
-        <img src="../images/carel-0.jpg">Thank you for contacting us. We will be in touch with you very soon.
-     </div>
-   <a href="index.html">Regresar</a>
+   </div>
+   <button type="button" onclick="location.href='index.html'">
+    Regresar
+   </button>
  </section>
  </body>
  </html>
