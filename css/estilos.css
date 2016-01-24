@@ -14,7 +14,6 @@
 	src:url(../fonts/TheSans-4-SemiLight.otf);
 }
 
-
 nav{
 	border-bottom: 4px solid black;
 	width: 100%;
@@ -185,7 +184,8 @@ article{
 }
 
 .logo{
-	width: 29%;
+	width: 30%;
+	margin: 0 6% 0 6%!important;
 	height:180px;
 	display:inline-block;
 	cursor: pointer;
@@ -214,13 +214,13 @@ article{
 }
 .logo-cont{
   z-index: 9999;
-  width: 70%;
+  width: 90%;
   font-size: 17px;
   line-height: 1.4;
   color: #2e3192;
   background: transparent;
   opacity: 0;
-  margin:45% 0 0 0;
+  margin:55% 0 0 0;
   cursor: default;
   pointer-events: none;
   font-family: my-Fontsem;
@@ -383,7 +383,7 @@ footer{
 }
 .logo-1{
 	background: url('../images/logo_soft.png') no-repeat;
-	background-size: 60%;
+	background-size: 90%;
 	text-align: center;
 	background-position: center;
 	margin: -3% 0;
@@ -392,7 +392,7 @@ footer{
 }
 .logo-2{
 	background: url('../images/logo_psic.png') no-repeat;
-	background-size: 50%;
+	background-size: 80%;
 	text-align: center;
 	background-position: center;
 }
@@ -517,8 +517,9 @@ footer{
 	margin-top: 10%;
 }
 .txt-me input{
+	border-radius: 6px 6px 0 0;
 	color: white;
-	background: rgba(0,0,0,.8);
+	background: rgba(0,0,0,.6);
 	margin-bottom: 10px;
 	width: 63%;
 	padding-left: 35px;
@@ -526,24 +527,25 @@ footer{
 	-webkit-appearance:none;
 }
 .txt-me textarea{
+	border-radius: 6px 6px 0 0;
 	color: white;
 	border-bottom: 2px solid #f44f7e;
-	background: rgba(0,0,0,.8);
+	background: rgba(0,0,0,.6);
 	height: 100px;
-	padding: 25px 0 0 0;
+	padding: 25px 0 0 35px;
+	box-sizing:border-box;
 	line-height: 25px;
 	vertical-align: middle;
 	width: 70%;
 }
 .txt-me::before{
 	width: 100%;
-	content: 'Leave a message:';
+	content: 'Let\00b4s get in touch!';
 	font-family: my-Fontsem;
-	font-size: 22px;
-	color: #f44f7e;
+	font-size: 25px;
+	color: white;
 	padding-bottom: 2%;
 	display: block;
-	border-bottom: 1px solid black;
 	margin-bottom: 20px;
 }
 .enter-info{
@@ -586,7 +588,7 @@ footer{
 
 .about-me{
 	position: fixed;
-	height: 380px;
+	height: 500px;
 	width: 100%;
 	margin: 5.9em auto;
 	display: block;
@@ -596,7 +598,7 @@ footer{
 .bio-me{
 	display: none;
 	background: black;
-	height: 450px;
+	height: 400px;
 	width: 65%;
 	margin: 0 auto;
 	-webkit-transition: height .5s, -webkit-transform 2s;
@@ -758,18 +760,19 @@ h3{
 }
 @media screen and (max-width: 1024px){
 	nav{
+		height: 90px;
 	}
 	.header{
 		width: 100%;
 	}
 	#logo{
-		width: 29%;
+		width: 20%;
 		margin-left: 110px;
 		height: 60px;
 		padding-top:10px;
 	}
 	#logo img{
-		width: 100%;
+		width: 29%;
 	}
 	.mmenu{
 		width: 40%;
@@ -779,12 +782,12 @@ h3{
 		width: 210px;
 	}
 	.labels{
-		height: 60px;
-		line-height: 60px;
+		height: 90px;
+		line-height: 90px;
 	}
 	.labels li{
-		padding-top: 10px;
-		height: 60px;
+		padding-top: 0;
+		height: 90px;
 	}
 	.txt-mobile{
 		display: block;
@@ -795,6 +798,25 @@ h3{
 		width: 100%;
 		display: block;
 		color: gray;
+	}
+	.intro, .main{
+		width: 80vw;
+	}
+	.logoo{
+		display: inline-block;
+		width: 100%;
+	}
+	.logo{
+		width: 30%;
+    	margin: 0 6% 0 6%!important;
+    	height: 180px;
+    	display: inline-block;
+    	cursor: pointer;
+	}
+	.logo-1, .logo-2{
+	    background-size: 80%;
+	    text-align: center;
+	    background-position: center;
 	}
 }
 @media screen and (max-width: 768px){
@@ -1224,13 +1246,13 @@ footer{
 		height: 370px !important;
 	}
 	.logo-1, .logo-2, .logo-3, .logo-4, .logo-5, .logo-6{
-		background-size: 75% !important;
-		height: 145px;
+		background-size: 60% !important;
+		height: 130px;
 		background-position: top;
 		margin-top:40px;
 	}
 	.logo-3{
-		margin-top: 100px!important;
+		margin-top: 20px!important;
 	}
 	.logo-4{
 		margin-top: 0;
@@ -1240,7 +1262,7 @@ footer{
 		margin-top: -10px;
 	}
 	.logo-4{
-		background-size: 55%!important;
+		background-size: 50%!important;
 		margin-top: 50px;
 	}
 	.logo-5{
@@ -1402,7 +1424,10 @@ footer{
 	.intro img {
     padding-top: 11% !important;
 }
-.page{
+	.page{
 	height: 200px;
+}
+.logo-6{
+	margin-top: 40px!important;
 }
 }
